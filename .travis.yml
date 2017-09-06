@@ -1,21 +1,17 @@
 language: ruby
 cache: bundler
 
-os: osx
-osx_image: xcode9
-
 rvm:
   - 2.4.0
 
 before_install:
-  - 'brew update'
+  - gem update --system
+  - gem --version
 install: gem install rails
 
 before_script:
   - 'bundle update'
   - 'bundle install'
-  - 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null'
-  - 'brew cask install sauce-connect'
 
 branches:
   only:
