@@ -15,7 +15,7 @@ before_install:
 install: gem install rails
 
 before_script:
-  - 'mv sc-4.4.8-linux/bin/sc /usr/local/bin/sc'
+  - 'sudo mv sc-4.4.8-linux/bin/sc /usr/local/bin/sc'
   - 'export PATH=$PATH:/usr/local/bin/sc'
   - 'source ~/.bashrc'
   - 'echo $PATH'
