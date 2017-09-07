@@ -15,7 +15,7 @@ before_install:
 install: gem install rails
 
 before_script:
-  - 'export PATH=$PATH:/tmp/sc.uMtb'
+  - 'export PATH=$PATH:/sc-4.4.8-linux/bin/sc'
   - 'source ~/.bashrc'
   - 'echo $PATH'
   - 'bundle update'
