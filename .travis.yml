@@ -19,7 +19,7 @@ before_script:
   - 'export PATH=$PATH:/usr/local/bin/sc'
   - 'source ~/.bashrc'
   - 'echo $PATH'
-  - 'sc -u dhimasadiyasapro -k a4834164-d41a-4c31-893f-82e4fb721f9d'
+#  - 'sc -u dhimasadiyasapro -k a4834164-d41a-4c31-893f-82e4fb721f9d'
   - 'bundle update'
   - 'bundle install'
 script: cucumber features/smoketest.feature
