@@ -15,10 +15,10 @@ before_install:
 install: gem install rails
 
 before_script:
-  - 'export PATH=$PATH:/sc-4.4.8-linux/bin/sc'
+  - 'mv sc-4.4.8-linux/bin/sc /usr/local/bin/sc'
+  - 'export PATH=$PATH:/usr/local/bin/sc'
   - 'source ~/.bashrc'
   - 'echo $PATH'
-  - 'sc'
   - 'bundle update'
   - 'bundle install'
 script: cucumber features/smoketest.feature

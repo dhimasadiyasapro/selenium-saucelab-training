@@ -10,7 +10,8 @@ Capybara.javascript_driver = :sauce
 #Capybara.server_port = 80
 
 Sauce.config do |c|
-  c[:sauce_connect_4_executable] = "/sc-4.4.8-linux/bin/sc"
+  #c[:sauce_connect_4_executable] = "/sc-4.4.8-linux/bin/sc"
+  c[:sauce_connect_4_executable] = "/usr/local/bin/sc"
   c[:start_tunnel] = true
   c[:skip_connection_test] = true
 #  c[:start_local_application] = false
