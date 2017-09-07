@@ -12,6 +12,7 @@ install: gem install rails
 before_script:
   - 'bundle update'
   - 'bundle install'
+script: cucumber features/smoketest.feature
 
 branches:
   only:
