@@ -4,6 +4,11 @@ cache: bundler
 rvm:
   - 2.4.0
 
+addons:
+  sauce_connect:
+    username: "dhimasadiyasapro"
+    access_key: "a4834164-d41a-4c31-893f-82e4fb721f9d"
+
 before_install:
   - gem update --system
   - gem --version
