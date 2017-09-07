@@ -18,6 +18,7 @@ before_script:
   - 'export PATH=$PATH:/sc-4.4.8-linux/bin/sc'
   - 'source ~/.bashrc'
   - 'echo $PATH'
+  - 'sc'
   - 'bundle update'
   - 'bundle install'
 script: cucumber features/smoketest.feature
